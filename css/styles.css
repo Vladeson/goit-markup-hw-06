@@ -668,17 +668,21 @@ img {
     margin-top: 8px;
 }
 
+.modal-form-field.area {
+    height: 138px;
+}
+
 .modal-form-field:first-child {
     margin-top: 0;
 }
 
-.modal-form-field span {
+.form-field-name {
     display: block;
 
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.04em;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
 
     margin-bottom: 4px;
 
