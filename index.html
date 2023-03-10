@@ -25,6 +25,18 @@
           <a class="link nav-logo-header" href="./index.html"
             ><span class="nav-logo-blue">Web</span>Studio</a
           >
+
+          <button
+            type="button"
+            class="mobile-menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="icon-mobile-menu-open" width="32" height="22">
+              <use href="./images/sprite.svg#icon-hamburger"></use>
+            </svg>
+          </button>
+
           <ul class="list nav-list">
             <li class="nav-item current-page">
               <a class="link nav-link" href="./index.html">Studio</a>
@@ -51,6 +63,100 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <div class="mobile-menu js-menu-container" id="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close js-close-menu">
+            <svg class="icon-mobile-menu-close" width="8" height="8">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-nav">
+            <ul class="list nav-mobile-list">
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link" href="./index.html">Studio</a>
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link" href="./portfolio.html"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-mobile-item">
+                <a class="link nav-mobile-link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-connection">
+            <ul class="list mobile-connection-list">
+              <li class="mobile-connection-item">
+                <a class="link mobile-connection-tel" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-connection-item">
+                <a
+                  class="link mobile-connection-mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="list mobile-list-social-media">
+            <li class="mobile-item-social-media">
+              <a
+                class="mobile-social-link-media"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-icon-social-link-media">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-social-media">
+              <a
+                class="mobile-social-link-media"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-icon-social-link-media">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-social-media">
+              <a
+                class="mobile-social-link-media"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-icon-social-link-media">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-item-social-media">
+              <a
+                class="mobile-social-link-media"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="mobile-icon-social-link-media">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -157,8 +263,8 @@
                 height="260"
               />
               <div class="employye">
-                <h3 class="subtitle">Mark Guerrero</h3>
-                <p class="desc">Product Designer</p>
+                <h3 class="subtitle-emloyee">Mark Guerrero</h3>
+                <p class="desc-employee">Product Designer</p>
                 <ul class="list list-social-links-employye">
                   <li>
                     <a
@@ -214,8 +320,8 @@
             <li class="item-our-team">
               <img src="./images/workers/tf.jpg" alt="Tom Ford" width="264" />
               <div class="employye">
-                <h3 class="subtitle">Tom Ford</h3>
-                <p class="desc">Frontend Developer</p>
+                <h3 class="subtitle-emloyee">Tom Ford</h3>
+                <p class="desc-employee">Frontend Developer</p>
                 <ul class="list list-social-links-employye">
                   <li>
                     <a
@@ -275,8 +381,8 @@
                 width="264"
               />
               <div class="employye">
-                <h3 class="subtitle">Camila Garcia</h3>
-                <p class="desc">Marketing</p>
+                <h3 class="subtitle-emloyee">Camila Garcia</h3>
+                <p class="desc-employee">Marketing</p>
                 <ul class="list list-social-links-employye">
                   <li>
                     <a
@@ -336,8 +442,8 @@
                 width="264"
               />
               <div class="employye">
-                <h3 class="subtitle">Daniel Wilson</h3>
-                <p class="desc">UI Designer</p>
+                <h3 class="subtitle-emloyee">Daniel Wilson</h3>
+                <p class="desc-employee">UI Designer</p>
                 <ul class="list list-social-links-employye">
                   <li>
                     <a
@@ -619,6 +725,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
